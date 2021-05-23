@@ -12,6 +12,8 @@ import config from '../webpack.config.dev';
 // var port = 3000;
 // var app = express();
 
+/* eslint-disable no-console */
+
 const port = 3000;
 const app = express();
 
