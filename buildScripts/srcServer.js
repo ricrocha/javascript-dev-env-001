@@ -27,6 +27,15 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
+app.get('/users', function(req, res){
+  // Hard coding for simplicity, pretend this hits a real database
+  res.json([
+    {"id": 1, "firstName": "Bob", "lastName": "Smith", "emai": "bob@gmai.com"},
+    {"id": 2, "firstName": "Tammy", "lastName": "Norton", "emai": "tnorton@yahoo.com"},
+    {"id": 3, "firstName": "Tina", "lastName": "Lee", "emai": "lee.tina@hotmail.com"}
+  ]);
+})
+
 app.listen(port, function(err){
   if (err) {
     console.log(err);
