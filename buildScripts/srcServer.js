@@ -13,7 +13,6 @@ import config from '../webpack.config.dev';
 // var app = express();
 
 /* eslint-disable no-console */
-
 const port = 3000;
 const app = express();
 
@@ -30,9 +29,9 @@ app.get('/', function(req, res){
 app.get('/users', function(req, res){
   // Hard coding for simplicity, pretend this hits a real database
   res.json([
-    {"id": 1, "firstName": "Bob", "lastName": "Smith", "emai": "bob@gmai.com"},
-    {"id": 2, "firstName": "Tammy", "lastName": "Norton", "emai": "tnorton@yahoo.com"},
-    {"id": 3, "firstName": "Tina", "lastName": "Lee", "emai": "lee.tina@hotmail.com"}
+    {"id": 1, "firstName": "Bob", "lastName": "Smith", "email": "bob@gmai.com"},
+    {"id": 2, "firstName": "Tammy", "lastName": "Norton", "email": "tnorton@yahoo.com"},
+    {"id": 3, "firstName": "Tina", "lastName": "Lee", "email": "lee.tina@hotmail.com"}
   ]);
 })
 
